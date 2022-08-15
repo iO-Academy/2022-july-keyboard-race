@@ -24,12 +24,12 @@ h1 {
     display: flex;
 }
 #leaderSurfboard {
-    align-items: center;
+    align-content: center;
 }
 
 .sky {
     border: 1px solid #373C99;
-    height: 20vh;
+    height: 50vh;
 }
 
 .waves {
@@ -39,12 +39,22 @@ h1 {
 
 #mainGameContainer {
     margin: 5%;
-    height: 40vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
 
 #displaySplashInstructionsContainer {
     position: absolute;
-    padding-right: 50px;
+    padding:5%;
+    margin-right: 40px;
+}
+
+#avatar {
+    width: 10px;
+    height: 10px;
+    background-color: #373C99;
+    position: absolute;
+    ;
 }
