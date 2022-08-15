@@ -1,0 +1,41 @@
+body {
+    background-color: #FE9D8D ;
+    font-family: "Press Start 2P", sans-serif ;
+}
+
+h1 {
+    color: #373C99;
+}
+
+.landingTopContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingLeft{
+    width: 20%;
+}
+
+.landingTitleContainer {
+    justify-content: space-between;
+}
+
+.leaderSurfboardContainer {
+    display: flex;
+}
+#leaderSurfboard {
+    align-items: center;
+}
+
+.sky {
+    border: 1px solid #373C99;
+    height: 20vh;
+    margin: 5%;
+}
+
+.waves {
+    border: 1px solid #373C99;
+    height: 20vh;
+    margin: 5%;
+}
+
