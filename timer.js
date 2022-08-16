@@ -1,4 +1,4 @@
-let gameTimer = document.querySelector('#timerSecondsDisplay')
+let gameTimer = document.querySelector('#stopwatchSecondsDisplay')
 
 let timer = 0
 const raceTimer = setInterval(() => {
