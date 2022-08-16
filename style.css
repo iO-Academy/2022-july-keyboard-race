@@ -90,8 +90,10 @@ h1 {
     width: 10px;
     height: 10px;
     background-color: #373C99;
-    position: relative;
-    top: 98.5%;
+    position: absolute;
+    left: 0px;
+    top: 440px;
+    z-index: 5;
 }
 
 #displaySplashInstructionsContainer {
@@ -165,10 +167,6 @@ h1 {
                 url(./imgs/clouds1000_blur3.png) 100px 250px;
       animation: wind 120s linear infinite;
       z-index: 3;
-  }
-
-  .hiden {
-    display: none;
   }
 
   /* Keyframes below here ! */
