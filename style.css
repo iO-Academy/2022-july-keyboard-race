@@ -82,6 +82,7 @@ h1 {
     z-index: 5;
     background-image: url(./imgs/surfingPenguin.png);
     background-size: cover;
+    transition: left linear 0.15s;
 }
 
 #displaySplashInstructionsContainer {
