@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FE9D8D;
     font-family: "Press Start 2P", sans-serif;
@@ -24,11 +28,21 @@ h1 {
     display: flex;
 }
 
-#mainGameContainer {
-    margin: 5%;
-    height: 70vh;
+.main-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+#mainGameContainer {
+    margin: 5%;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(#f9855d,#fdd288,white);
+    overflow: hidden;
     padding-top: 10px;
 }
 
@@ -52,9 +66,17 @@ h1 {
 
 #displaySplashInstructionsContainer {
     position: absolute;
-    padding: 5%;
-    margin-right: 55px;
-    /*height: 150vh;*/
+    display: flex;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 1000pxx; 
+    padding: 40px;
+    background-color: #FE9D8D;
+    border: 5px #373C99 solid;
 }
 
 #leaderSurfboard {
