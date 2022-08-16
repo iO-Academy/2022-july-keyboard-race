@@ -77,6 +77,7 @@ h1 {
     padding: 40px;
     background-color: #FE9D8D;
     border: 5px #373C99 solid;
+    display: none; /*Remove after Testing ! */
 }
 
 #leaderSurfboard {
@@ -100,3 +101,29 @@ h1 {
     width: 150px;
     height: 60px;
 }
+
+#cloud-intro{
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    background: url(./imgs/clouds1000.png);
+    background: url(./imgs/clouds10002.png) 0 200px,
+                url(./imgs/clouds12001.png) 0 300px,
+                url(./imgs/clouds1000_blur3.png) 100px 250px;
+      animation: wind 120s linear infinite;
+      z-index: 3;
+  }
+
+  /* Keyframes below here ! */
+  @keyframes wind{
+    0% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+    50% {
+      background-position: 1000px 200px, 1200px 300px, 1400px 250px;
+    }
+    100% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+  
+  }
