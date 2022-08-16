@@ -16,10 +16,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .stopwatchContainer {
     width: 25%;
+    color: #000000;
 }
 
 .landingTitleContainer {
