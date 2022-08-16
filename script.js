@@ -1,4 +1,4 @@
-const startButton = document.querySelector('#startGameButton');
+const startButton = document.querySelector('#startGameButton')
 const splashScreen = document.querySelector('#displaySplashInstructionsContainer')
 const avatar = document.getElementById('avatar')
 
@@ -7,7 +7,7 @@ let penguinPosition = parseInt(avatar.style.left)
 let lastKeyPressed = ""
 
 function checkKey(lastKeyPressed, currentKeyPressed) {
-    return lastKeyPressed !== currentKeyPressed;
+    return lastKeyPressed !== currentKeyPressed
 }
 
 function movePenguin(penguinPosition){
@@ -17,7 +17,7 @@ function movePenguin(penguinPosition){
 }
 
 function checkEnd(penguinPosition){
-    return penguinPosition > 1000;
+    return penguinPosition > 1000
 }
 
 function endGame(){
@@ -25,7 +25,7 @@ function endGame(){
 }
 
 startButton.addEventListener('click', () => {
-    splashScreen.style.display = "none";
+    splashScreen.style.display = "none"
     document.addEventListener("keydown", (event) => {
         if(event.code === "ArrowLeft" || event.code === "ArrowRight") {
             if (checkKey(lastKeyPressed, event.code)) {
