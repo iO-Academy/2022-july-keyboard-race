@@ -29,10 +29,9 @@ h1 {
     display: flex;
 }
 
-.main-container {
+.mainContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -42,7 +41,7 @@ h1 {
     height: 600px;
     position: relative;
     border-radius: 10px;
-    background: linear-gradient(#f9855d,#fdd288,white);
+    background: linear-gradient(#f9855d,#fdd288,#ffffff);
     overflow: hidden;
 }
 
@@ -50,7 +49,7 @@ h1 {
     position: relative;
     width: 100%;
     height: 30vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
+    margin-bottom:-7px;
     min-height:100px;
     max-height:150px;
     z-index: -2;
@@ -68,7 +67,6 @@ h1 {
     z-index: 2;
 }
 
-/* waves */
 .ocean {
     height: 150px; /* change the height of the waves here */
     width: 400%;
@@ -78,7 +76,7 @@ h1 {
     right: 0;
     overflow-x: hidden;
     background-color: #1e90ff;
-    border-top: 2px white solid;
+    border-top: 2px #ffffff solid;
     z-index: 4;
 }
 
