@@ -4,6 +4,14 @@ function checkKey(lastKeyPressed, currentKeyPressed) {
     return lastKeyPressed !== currentKeyPressed;
 }
 
+function checkEnd(penguinPosition){
+    return penguinPosition > 100;
+}
+
+function endGame(){
+    alert('')
+}
+
 document.addEventListener("keydown", (event) => {
     switch (event.code) {
         case "ArrowLeft":
