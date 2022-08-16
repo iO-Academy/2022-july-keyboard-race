@@ -1,7 +1,8 @@
 let lastKeyPressed = ""
 
-function checkKey() {}
-
+function checkKey(lastKeyPressed, currentKeyPressed) {
+    return lastKeyPressed !== currentKeyPressed;
+}
 
 document.addEventListener("keydown", (event) => {
     switch (event.code) {
