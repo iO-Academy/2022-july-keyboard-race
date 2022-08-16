@@ -14,4 +14,4 @@ function incrementTimer(timer) {
 
 // document.addEventListener('keypress',
 //     function (event) {
-//         if (even t.code == 'RightArrow' || 'LeftArrow') }
+//         if (even t.code == 'RightArr4ow' || 'LeftArrow') }
