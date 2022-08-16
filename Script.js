@@ -17,16 +17,12 @@ document.addEventListener("keydown", (event) => {
         case "ArrowLeft":
             if (checkKey(lastKeyPressed, "ArrowLeft")) {
                 movePenguin(penguinPosition)
-                // console.log to test
-                console.log('penguin moves left')
                 lastKeyPressed = "ArrowLeft"
             }
             break;
         case "ArrowRight":
             if (checkKey(lastKeyPressed, "ArrowRight")) {
                 movePenguin(penguinPosition)
-                // console.log to test
-                console.log('penguin moves right')
                 lastKeyPressed = "ArrowRight"
             }
             break;
