@@ -1,6 +1,6 @@
 body {
-    background-color: #FE9D8D ;
-    font-family: "Press Start 2P", sans-serif ;
+    background-color: #FE9D8D;
+    font-family: "Press Start 2P", sans-serif;
 }
 
 h1 {
@@ -12,7 +12,7 @@ h1 {
     justify-content: space-between;
 }
 
-.landingLeft{
+.landingLeft {
     width: 20%;
 }
 
@@ -26,7 +26,7 @@ h1 {
 
 #mainGameContainer {
     margin: 5%;
-    height: 150vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     padding-top: 10px;
@@ -52,8 +52,9 @@ h1 {
 
 #displaySplashInstructionsContainer {
     position: absolute;
-    padding:5%;
+    padding: 5%;
     margin-right: 55px;
+    /*height: 150vh;*/
 }
 
 #leaderSurfboard {
