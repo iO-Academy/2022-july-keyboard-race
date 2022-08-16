@@ -1,7 +1,5 @@
+
 let lastKeyPressed = ""
-let avatar = document.getElementById('avatar')
-avatar.style.left = '10px'
-let penguinPosition = parseInt(avatar.style.left)
 
 function checkKey(lastKeyPressed, currentKeyPressed) {
     return lastKeyPressed !== currentKeyPressed;
@@ -17,14 +15,14 @@ document.addEventListener("keydown", (event) => {
     switch (event.code) {
         case "ArrowLeft":
             if (checkKey(lastKeyPressed, "ArrowLeft")) {
-                movePenguin(penguinPosition)
                 lastKeyPressed = "ArrowLeft"
+                penguinPosition = movePenguin(penguinPosition)
             }
             break;
         case "ArrowRight":
             if (checkKey(lastKeyPressed, "ArrowRight")) {
-                movePenguin(penguinPosition)
                 lastKeyPressed = "ArrowRight"
+                penguinPosition = movePenguin(penguinPosition)
             }
             break;
     }
