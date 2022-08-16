@@ -3,6 +3,7 @@
 }
 
 body {
+    font-size: 16px;
     background-color: #FE9D8D;
     font-family: "Press Start 2P", sans-serif;
 }
@@ -45,11 +46,6 @@ h1 {
     overflow: hidden;
 }
 
-.sky {
-    border: 1px solid #373C99;
-    height: 50vh;
-}
-
 .waves {
     position: relative;
     width: 100%;
@@ -87,13 +83,14 @@ h1 {
 }
 
 #avatar {
-    width: 10px;
-    height: 10px;
-    background-color: #373C99;
+    width: 60px;
+    height: 40px;
     position: absolute;
     left: 0px;
-    top: 440px;
+    top: 415px;
     z-index: 5;
+    background-image: url(./imgs/surfingPenguin.png);
+    background-size: cover;
 }
 
 #displaySplashInstructionsContainer {
@@ -105,12 +102,13 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 600px;
-    width: 1000pxx; 
+    width: 1000px; 
     padding: 40px;
     background-color: #FE9D8D;
     border: 5px #373C99 solid;
     z-index: 10;
-    display: none;
+    /* display: none; */
+    /*comment this out as needed */
 }
 
 #leaderSurfboard {
