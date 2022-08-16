@@ -102,7 +102,7 @@ h1 {
     height: 60px;
 }
 
-#cloud-intro{
+.cloud-background {
     position: relative;
     overflow: hidden;
     height: 600px;
