@@ -23,8 +23,13 @@ h1 {
 .leaderSurfboardContainer {
     display: flex;
 }
-#leaderSurfboard {
-    align-content: center;
+
+#mainGameContainer {
+    margin: 5%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
 }
 
 .sky {
@@ -37,24 +42,38 @@ h1 {
     height: 20vh;
 }
 
-#mainGameContainer {
-    margin: 5%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+#avatar {
+    width: 10px;
+    height: 10px;
+    background-color: #373C99;
+    position: relative;
+    top: 98.5%;
 }
 
 #displaySplashInstructionsContainer {
     position: absolute;
     padding:5%;
-    margin-right: 40px;
+    margin-right: 55px;
 }
 
-#avatar {
-    width: 10px;
-    height: 10px;
+#leaderSurfboard {
+    border-radius: 10px;
     background-color: #373C99;
-    position: absolute;
-    ;
+    color: #F0EFF5;
+    width: 150px;
+    margin-right: 50px;
+}
+
+.startGameButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#startGameButton {
+    border-radius: 10px;
+    background-color: #373C99;
+    color: #F0EFF5;
+    font-size: 1.5rem;
+    width: 150px;
+    height: 60px;
 }
