@@ -1,6 +1,7 @@
 let lastKeyPressed = ""
-box2.style.left = '10px'
-let penguinPosition = parseInt(box2.style.left)
+let avatar = document.getElementById('avatar')
+avatar.style.left = '10px'
+let penguinPosition = parseInt(avatar.style.left)
 
 function checkKey(lastKeyPressed, currentKeyPressed) {
     return lastKeyPressed !== currentKeyPressed;
@@ -8,7 +9,7 @@ function checkKey(lastKeyPressed, currentKeyPressed) {
 
 function movePenguin(penguinPosition){
     penguinPosition += 5
-    box2.style.left = penguinPosition + 'px'
+    avatar.style.left = penguinPosition + 'px'
     return penguinPosition
 }
 
