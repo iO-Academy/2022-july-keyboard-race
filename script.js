@@ -33,8 +33,8 @@ startButton.addEventListener('click', () => {
         if (lastKeyPressed === '') {
             raceStopwatch = setInterval(() => {
                 timer++
-                gameTimerDisplay.textContent = timer
-            }, 1000)
+                gameTimerDisplay.textContent = timer / 10
+            }, 100)
         }
         if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
             if (checkKey(lastKeyPressed, e.code)) {
