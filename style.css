@@ -8,8 +8,14 @@ body {
     font-family: "Press Start 2P", sans-serif;
 }
 
-h1 {
-    color: #373C99;
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #373C99;
+    color: white;
+    text-align: center;
 }
 
 .landingTopContainer {
@@ -35,6 +41,8 @@ h1 {
 
 .landingTitle {
     text-transform: uppercase;
+    color: #373C99;
+    font-weight: 400;
 }
 
 .leaderSurfboardContainer {
@@ -69,10 +77,9 @@ h1 {
     border-radius: 50%;
     z-index: 2;
 }
-
 .ocean {
-    height: 150px; /* change the height of the waves here */
-    width: 400%;
+height: 150px; /* change the height of the waves here */
+width: 400%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -81,6 +88,7 @@ h1 {
     border-top: 2px #ffffff solid;
     z-index: 4;
 }
+
 
 #avatar {
     width: 60px;
@@ -94,6 +102,9 @@ h1 {
     transition: left linear 0.15s;
 }
 
+.instructionsOverlayTitle {
+    font-weight: 400;
+}
 #displaySplashInstructionsContainer {
     position: absolute;
     display: flex;
@@ -108,9 +119,10 @@ h1 {
     background-color: #FE9D8D;
     border: 5px #373C99 solid;
     z-index: 10;
-    /* display: none; */
-    /*comment this out as needed */
+/* display: none; */
+/*comment this out as needed */
 }
+
 
 #leaderSurfboard {
     border-radius: 10px;
@@ -138,13 +150,13 @@ h1 {
     transform: translate3d(0, 0, 0);
     opacity: 0.6;
   }
-  
+
   .wave:nth-of-type(2) {
     bottom: 0;
     animation: wave 36s linear reverse infinite;
     opacity: 0.7;
   }
-  
+
   .wave:nth-of-type(3) {
     bottom: 0;
     animation: wave 40s -1s linear infinite;
@@ -160,16 +172,6 @@ h1 {
                 url(./imgs/clouds1000_blur3.png) 100px 250px;
       animation: wind 120s linear infinite;
       z-index: 3;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #373C99;
-    color: white;
-    text-align: center;
   }
 
   /* Keyframes below here ! */
