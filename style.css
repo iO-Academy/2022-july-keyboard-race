@@ -16,16 +16,16 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 .stopwatchContainer {
     white-space: nowrap;
     color: #000000;
+    padding: 0px 100px 0px 20px;
 }
 
 .landingTitleContainer {
-    width: 75%;
     text-align: center;
 }
 
@@ -34,8 +34,9 @@ h1 {
 }
 
 .leaderSurfboardContainer {
+    width: 200px;
     display: flex;
-    width: 25%;
+    padding: 0px 20px 0px 100px;
 }
 
 .mainContainer {
@@ -45,7 +46,7 @@ h1 {
   }
 
 #mainGameContainer {
-    margin: 5%;
+    margin: 10px;
     width: 1000px;
     height: 600px;
     position: relative;
