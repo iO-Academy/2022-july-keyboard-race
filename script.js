@@ -59,7 +59,6 @@ startButton.addEventListener('click', () => {
                 lastKeyPressed = e.code
                 penguinPosition = movePenguin(penguinPosition)
                 if (checkEnd(penguinPosition)) {
-                    endGameMessage()
                     clearInterval(raceStopwatch)
                     window.document.removeEventListener("keydown", playGame)
                         if (checkEnd(penguinPosition)) {
