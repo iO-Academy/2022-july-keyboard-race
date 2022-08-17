@@ -65,6 +65,10 @@ footer {
     align-items: center;
   }
 
+  .leaderboardContent {
+    margin-top: 3px;
+  }
+
 #mainGameContainer {
     margin: 10px;
     width: 1000px;
@@ -82,8 +86,8 @@ footer {
     position: relative;
     border-radius: 10px;
     background: #373C99;
-    overflow: hidden;
-    color: #ffffff
+    overflow: auto;
+    color: #ffffff;
 }
 
 .leaderboardHeader {
