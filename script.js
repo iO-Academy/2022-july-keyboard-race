@@ -8,7 +8,6 @@ avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
 let lastKeyPressed = ""
 let timer = 0
-let timerDisplay = 0
 let raceStopwatch
 
 function checkKeyIsDifferent(lastKeyPressed, currentKeyPressed) {
