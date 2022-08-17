@@ -7,9 +7,10 @@ avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
 let lastKeyPressed = ""
 let timer = 0
+let timerDisplay = 0
 let raceStopwatch
 
-function checkKey(lastKeyPressed, currentKeyPressed) {
+function checkKeyIsDifferent(lastKeyPressed, currentKeyPressed) {
     return lastKeyPressed !== currentKeyPressed
 }
 
@@ -33,11 +34,12 @@ startButton.addEventListener('click', () => {
         if (lastKeyPressed === '') {
             raceStopwatch = setInterval(() => {
                 timer++
-                gameTimerDisplay.textContent = timer/100
+                timerDisplay = timer/100
+                gameTimerDisplay.textContent = parseFloat(timerDisplay).toFixed(2)
             }, 10)
         }
         if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
-            if (checkKey(lastKeyPressed, e.code)) {
+            if (checkKeyIsDifferent(lastKeyPressed, e.code)) {
                 lastKeyPressed = e.code
                 penguinPosition = movePenguin(penguinPosition)
                 if (checkEnd(penguinPosition)) {
