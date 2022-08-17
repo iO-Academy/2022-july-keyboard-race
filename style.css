@@ -185,8 +185,19 @@ h1 {
 }
 #nameField {
     width: 110px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    height: 60px;
+    margin-top:10px;
 }
 
+.saveButton, .playButton {
+    border-radius: 10px;
+    background-color: #373C99;
+    color: #F0EFF5;
+    padding: 10px;
+    margin: 10px;
+}
   /* Keyframes below here ! */
 @keyframes wave {
     0% {transform: translateX(0);}
