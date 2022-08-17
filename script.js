@@ -50,7 +50,8 @@ startButton.addEventListener('click', () => {
     // }
 }
 
-let playerName = `tom `
+
+let playerName = '#nameField'
 let playerTime = 12
 saveResult()
 
