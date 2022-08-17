@@ -33,9 +33,8 @@ startButton.addEventListener('click', () => {
     document.addEventListener("keydown", function playGame(e) {
         if (lastKeyPressed === '') {
             raceStopwatch = setInterval(() => {
-                timer++
-                timerDisplay = timer/100
-                gameTimerDisplay.textContent = parseFloat(timerDisplay).toFixed(2)
+                timer += 0.01
+                gameTimerDisplay.textContent = parseFloat(timer).toFixed(2)
             }, 10)
         }
         if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
