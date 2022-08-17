@@ -28,6 +28,18 @@ function endGameMessage() {
     alert('Far out brah! That was totally radical, you found some sweet lines down those faces! Catch you on the flip')
 }
 
+function saveResult(playerName, playerScore) {
+    let playerSaveObject = {name: playerName, score: playerScore}
+    localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
+}
+
+function getName(nameInput) {
+    let playerName = nameInput.Name.value
+    if (playerName.length === 3) {
+        saveResult(playerName, timer)
+    }
+}
+
 startButton.addEventListener('click', () => {
     splashScreen.style.display = "none"
     document.addEventListener("keydown", function playGame(e) {
@@ -53,3 +65,4 @@ startButton.addEventListener('click', () => {
         }
     })
 })
+
