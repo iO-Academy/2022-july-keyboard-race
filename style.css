@@ -20,13 +20,17 @@ h1 {
 }
 
 .stopwatchContainer {
-    width: 25%;
+    white-space: nowrap;
     color: #000000;
 }
 
 .landingTitleContainer {
-    width: 100%;
+    width: 75%;
     text-align: center;
+}
+
+.landingTitle {
+    text-transform: uppercase;
 }
 
 .leaderSurfboardContainer {
