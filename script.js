@@ -24,6 +24,12 @@ function checkEnd(penguinPosition) {
     return penguinPosition > 1000
 }
 
+function sortScoresAscending(scoreArray) {
+    return [...scoreArray].sort((a, b) => {
+        return a.score - b.score
+    })
+}
+
 function endGameMessage() {
     alert('Far out brah! That was totally radical, you found some sweet lines down those faces! Catch you on the flip')
 }
