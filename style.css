@@ -8,28 +8,47 @@ body {
     font-family: "Press Start 2P", sans-serif;
 }
 
-h1 {
-    color: #373C99;
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #373C99;
+    color: white;
+    text-align: center;
 }
 
 .landingTopContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 10px 0 10px;
 }
 
-.landingLeft {
-    width: 25%;
+.stopwatchContainer {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    white-space: nowrap;
+    color: #000000;
+
 }
 
 .landingTitleContainer {
-    width: 100%;
     text-align: center;
+    margin: 0 auto;
+}
+
+.landingTitle {
+    text-transform: uppercase;
+    color: #373C99;
+    font-weight: 400;
 }
 
 .leaderSurfboardContainer {
+    width: 200px;
     display: flex;
-    width: 25%;
+    padding: 0 20px 0 100px;
 }
 
 .mainContainer {
@@ -39,7 +58,7 @@ h1 {
   }
 
 #mainGameContainer {
-    margin: 5%;
+    margin: 10px;
     width: 1000px;
     height: 600px;
     position: relative;
@@ -58,10 +77,9 @@ h1 {
     border-radius: 50%;
     z-index: 2;
 }
-
 .ocean {
-    height: 150px; /* change the height of the waves here */
-    width: 400%;
+height: 150px; /* change the height of the waves here */
+width: 400%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -71,11 +89,12 @@ h1 {
     z-index: 4;
 }
 
+
 #avatar {
     width: 60px;
     height: 40px;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 415px;
     z-index: 5;
     background-image: url(./imgs/surfingPenguin.png);
@@ -83,11 +102,14 @@ h1 {
     transition: left linear 0.15s;
 }
 
+.instructionsOverlayTitle {
+    font-weight: 400;
+}
 #displaySplashInstructionsContainer {
     position: absolute;
     display: flex;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -97,9 +119,8 @@ h1 {
     background-color: #FE9D8D;
     border: 5px #373C99 solid;
     z-index: 10;
-    /* display: none; */
-    /*comment this out as needed */
 }
+
 
 #leaderSurfboard {
     border-radius: 10px;
@@ -127,13 +148,13 @@ h1 {
     transform: translate3d(0, 0, 0);
     opacity: 0.6;
   }
-  
+
   .wave:nth-of-type(2) {
     bottom: 0;
     animation: wave 36s linear reverse infinite;
     opacity: 0.7;
   }
-  
+
   .wave:nth-of-type(3) {
     bottom: 0;
     animation: wave 40s -1s linear infinite;
@@ -150,7 +171,6 @@ h1 {
       animation: wind 120s linear infinite;
       z-index: 3;
   }
-
   footer {
     position: absolute;
     bottom: 0px;
@@ -198,7 +218,7 @@ h1 {
     padding: 10px;
     margin: 10px;
 }
-  /* Keyframes below here ! */
+
 @keyframes wave {
     0% {transform: translateX(0);}
     50% {transform: translateX(-25%);}
