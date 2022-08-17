@@ -29,20 +29,21 @@ function endGameMessage() {
 
 startButton.addEventListener('click', () => {
     splashScreen.style.display = "none"
-    document.addEventListener("keydown", (event) => {
+    document.addEventListener("keydown", function playGame(e) {
         if (lastKeyPressed === '') {
             raceStopwatch = setInterval(() => {
                 timer++
                 gameTimerDisplay.textContent = timer
             }, 1000)
         }
-        if (event.code === "ArrowLeft" || event.code === "ArrowRight") {
-            if (checkKey(lastKeyPressed, event.code)) {
-                lastKeyPressed = event.code
+        if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
+            if (checkKey(lastKeyPressed, e.code)) {
+                lastKeyPressed = e.code
                 penguinPosition = movePenguin(penguinPosition)
                 if (checkEnd(penguinPosition)) {
                     endGameMessage()
                     clearInterval(raceStopwatch)
+                    window.document.removeEventListener("keydown", playGame)
                 }
             }
         }
