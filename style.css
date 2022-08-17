@@ -20,13 +20,17 @@ h1 {
 }
 
 .stopwatchContainer {
+    position: absolute;
+    top: 15px;
+    left: 20px;
     white-space: nowrap;
     color: #000000;
-    padding: 0 100px 0 20px;
+
 }
 
 .landingTitleContainer {
     text-align: center;
+    margin: 0 auto;
 }
 
 .landingTitle {
