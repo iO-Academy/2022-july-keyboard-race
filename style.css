@@ -183,7 +183,7 @@ width: 400%;
 
 #displayEndGameContainer {
     position: absolute;
-    display: flex;
+    display: none;
     top: 0px;
     left: 0px;
     flex-direction: column;
