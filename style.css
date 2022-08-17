@@ -58,11 +58,19 @@ footer {
     font-weight: 400;
 }
 
-.leaderboardSubTitle {
-    font-size: 1rem;
+.leaderboardSubTitleOne {
+    font-size: 1.5rem;
     position: absolute;
-    top: 68px;
-    left: 75px;
+    top: 40px;
+    left: 140px;
+    color: #373C99;
+}
+
+.leaderboardSubTitleTwo {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 75px;
+    left: 150px;
     color: #373C99;
 }
 
@@ -80,11 +88,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .leaderboardContent {
+.leaderboardContent {
     margin-top: 3px;
-  }
+}
 
 #mainGameContainer {
     margin: 10px;
@@ -131,6 +139,7 @@ footer {
     border-radius: 50%;
     z-index: 2;
 }
+
 .ocean {
     height: 150px; /* change the height of the waves here */
     width: 400%;
@@ -142,7 +151,6 @@ footer {
     border-top: 2px #ffffff solid;
     z-index: 4;
 }
-
 
 #avatar {
     width: 60px;
@@ -191,7 +199,7 @@ footer {
 
 .leaderboardSurfboardImage {
     height: 180px;
-    width: 360px;
+    width: 450px;
 }
 
 #startGameButton {
