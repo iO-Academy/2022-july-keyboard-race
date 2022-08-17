@@ -46,6 +46,9 @@ startButton.addEventListener('click', () => {
                     endGameMessage()
                     clearInterval(raceStopwatch)
                     window.document.removeEventListener("keydown", playGame)
+                        if (checkEnd(penguinPosition)) {
+                           endSplashScreen.style.display = 'flex';
+                  }
                 }
             }
         }
