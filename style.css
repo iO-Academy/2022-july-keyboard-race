@@ -16,13 +16,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px 0px 10px;
+    margin: 0 10px 0 10px;
 }
 
 .stopwatchContainer {
     white-space: nowrap;
     color: #000000;
-    padding: 0px 100px 0px 20px;
+    padding: 0 100px 0 20px;
 }
 
 .landingTitleContainer {
@@ -36,7 +36,7 @@ h1 {
 .leaderSurfboardContainer {
     width: 200px;
     display: flex;
-    padding: 0px 20px 0px 100px;
+    padding: 0 20px 0 100px;
 }
 
 .mainContainer {
@@ -82,7 +82,7 @@ h1 {
     width: 60px;
     height: 40px;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 415px;
     z-index: 5;
     background-image: url(./imgs/surfingPenguin.png);
@@ -93,8 +93,8 @@ h1 {
 #displaySplashInstructionsContainer {
     position: absolute;
     display: flex;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -160,8 +160,8 @@ h1 {
 
   footer {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #373C99;
     color: white;
