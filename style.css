@@ -202,6 +202,13 @@ footer {
     width: 450px;
 }
 
+.surfingPenguinThumbsUp {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    top: 300px;
+}
+
 #startGameButton {
     border-radius: 10px;
     background-color: #373C99;
