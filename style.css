@@ -90,6 +90,10 @@ footer {
     align-items: center;
 }
 
+.leaderboardContainer {
+    position: relative;
+}
+
 .leaderboardContent {
     margin-top: 3px;
 }
@@ -207,6 +211,7 @@ footer {
     height: 350px;
     width: 350px;
     top: 300px;
+    left: 1150px;
 }
 
 #startGameButton {
