@@ -209,6 +209,19 @@ width: 400%;
       z-index: 3;
   }
 
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #4859CD;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #EB6B78;
+    border-radius: 10px;
+  }
+
   /* Keyframes below here ! */
 @keyframes wave {
     0% {transform: translateX(0);}
