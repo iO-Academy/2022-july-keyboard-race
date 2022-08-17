@@ -61,9 +61,9 @@ footer {
 .leaderboardSubTitle {
     font-size: 1rem;
     position: absolute;
-    top: 150px;
-    left: 595px;
-    color: #ffffff;
+    top: 68px;
+    left: 75px;
+    color: #373C99;
 }
 
 .leaderSurfboardContainer {
@@ -159,6 +159,7 @@ footer {
 .instructionsOverlayTitle {
     font-weight: 400;
 }
+
 #displaySplashInstructionsContainer {
     position: absolute;
     display: flex;
