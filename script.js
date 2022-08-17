@@ -29,12 +29,12 @@ function endGameMessage() {
 }
 
 function saveResult(playerName, playerScore) {
-    let testObject = {name: playerName, score: playerScore}
-    localStorage.setItem('playerKey', JSON.stringify(testObject))
+    let playerSaveObject = {name: playerName, score: playerScore}
+    localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
 }
 
-function getName(form) {
-    let playerName = form.Name.value
+function getName(nameInput) {
+    let playerName = nameInput.Name.value
     if (playerName.length === 3) {
         saveResult(playerName, timer)
     }
