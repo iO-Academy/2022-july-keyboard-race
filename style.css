@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     background-color: #FE9D8D;
     font-family: "Press Start 2P", sans-serif;
+    background-color: #fe9d8d;  
 }
 
 footer {
@@ -26,6 +27,10 @@ footer {
     margin: 0 10px 0 10px;
 }
 
+.leaderboardTopContainer {
+    flex-direction: column;
+}
+
 .stopwatchContainer {
     position: absolute;
     top: 15px;
@@ -41,12 +46,24 @@ footer {
     margin: 0 auto;
 }
 
+.leaderboardTitle {
+    margin-bottom: 5px;
+}
+
 .landingTitle,
 .leaderboardTitle,
 .leaderboardSubTitle {
     text-transform: uppercase;
     color: #373C99;
     font-weight: 400;
+}
+
+.leaderboardSubTitle {
+    font-size: 1rem;
+    position: absolute;
+    top: 150px;
+    left: 595px;
+    color: #ffffff;
 }
 
 .leaderSurfboardContainer {
@@ -115,8 +132,8 @@ footer {
     z-index: 2;
 }
 .ocean {
-height: 150px; /* change the height of the waves here */
-width: 400%;
+    height: 150px; /* change the height of the waves here */
+    width: 400%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -158,6 +175,10 @@ width: 400%;
     z-index: 10;
 }
 
+.leaderboardSurfboardContainer {
+    margin-top: 0px;
+    position: relative;
+}
 
 #leaderSurfboard {
     border-radius: 10px;
@@ -165,6 +186,11 @@ width: 400%;
     color: #F0EFF5;
     width: 150px;
     margin-right: 50px;
+}
+
+.leaderboardSurfboardImage {
+    height: 180px;
+    width: 360px;
 }
 
 #startGameButton {
