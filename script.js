@@ -40,3 +40,18 @@ startButton.addEventListener('click', () => {
 })
 
 
+
+ function saveResult(key, value) {
+   const user = 'Player'
+    const players = [playerName, playerTime]
+    localStorage.setItem(user, players)
+    // if (endGame()) {
+    //     localStorage.getItem(players)
+    // }
+}
+
+let playerName = `tom `
+let playerTime = 12
+saveResult()
+
+
