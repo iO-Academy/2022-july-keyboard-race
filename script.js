@@ -2,6 +2,7 @@ const startButton = document.querySelector('#startGameButton')
 const splashScreen = document.querySelector('#displaySplashInstructionsContainer')
 const avatar = document.getElementById('avatar')
 const gameTimerDisplay = document.querySelector('#stopwatchSecondsDisplay')
+const endSplashScreen = document.querySelector('#displayEndGameContainer')
 
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
