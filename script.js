@@ -1,12 +1,16 @@
 const startButton = document.querySelector('#startGameButton')
 const splashScreen = document.querySelector('#displaySplashInstructionsContainer')
 const avatar = document.getElementById('avatar')
+const gameTimerDisplay = document.querySelector('#stopwatchSecondsDisplay')
+const endSplashScreen = document.querySelector('#displayEndGameContainer')
 
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
 let lastKeyPressed = ""
+let timer = 0
+let raceStopwatch
 
-function checkKey(lastKeyPressed, currentKeyPressed) {
+function checkKeyIsDifferent(lastKeyPressed, currentKeyPressed) {
     return lastKeyPressed !== currentKeyPressed
 }
 
@@ -20,26 +24,32 @@ function checkEnd(penguinPosition) {
     return penguinPosition > 1000
 }
 
-function endGame() {
+function endGameMessage() {
     alert('Far out brah! That was totally radical, you found some sweet lines down those faces! Catch you on the flip')
 }
 
 startButton.addEventListener('click', () => {
     splashScreen.style.display = "none"
-    document.addEventListener("keydown", (event) => {
-        if (event.code === "ArrowLeft" || event.code === "ArrowRight") {
-            if (checkKey(lastKeyPressed, event.code)) {
-                lastKeyPressed = event.code
+    document.addEventListener("keydown", function playGame(e) {
+        if (lastKeyPressed === '') {
+            raceStopwatch = setInterval(() => {
+                timer += 0.01
+                gameTimerDisplay.textContent = parseFloat(timer).toFixed(2)
+            }, 10)
+        }
+        if (e.code === "ArrowLeft" || e.code === "ArrowRight") {
+            if (checkKeyIsDifferent(lastKeyPressed, e.code)) {
+                lastKeyPressed = e.code
                 penguinPosition = movePenguin(penguinPosition)
                 if (checkEnd(penguinPosition)) {
-                    endGame()
+                    endGameMessage()
+                    clearInterval(raceStopwatch)
+                    window.document.removeEventListener("keydown", playGame)
                 }
             }
         }
     })
 })
-
-
 
  function saveResult(key, value) {
    const user = 'Player'
@@ -50,9 +60,7 @@ startButton.addEventListener('click', () => {
     // }
 }
 
-
 let playerName = '#nameField'
 let playerTime = 12
 saveResult()
-
 
