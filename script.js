@@ -1,7 +1,7 @@
 const startButton = document.querySelector('#startGameButton')
 const splashScreen = document.querySelector('#displaySplashInstructionsContainer')
 const avatar = document.getElementById('avatar')
-const gameTimer = document.querySelector('#stopwatchSecondsDisplay')
+const gameTimerDisplay = document.querySelector('#stopwatchSecondsDisplay')
 
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
@@ -23,17 +23,17 @@ function checkEnd(penguinPosition) {
     return penguinPosition > 1000
 }
 
-function endGame() {
+function endGameMessage() {
     alert('Far out brah! That was totally radical, you found some sweet lines down those faces! Catch you on the flip')
 }
 
 startButton.addEventListener('click', () => {
     splashScreen.style.display = "none"
     document.addEventListener("keydown", (event) => {
-        if(lastKeyPressed === '') {
+        if (lastKeyPressed === '') {
             raceStopwatch = setInterval(() => {
                 timer++
-                gameTimer.textContent = timer
+                gameTimerDisplay.textContent = timer
             }, 1000)
         }
         if (event.code === "ArrowLeft" || event.code === "ArrowRight") {
@@ -41,12 +41,10 @@ startButton.addEventListener('click', () => {
                 lastKeyPressed = event.code
                 penguinPosition = movePenguin(penguinPosition)
                 if (checkEnd(penguinPosition)) {
-                    endGame()
+                    endGameMessage()
                     clearInterval(raceStopwatch)
                 }
             }
         }
     })
 })
-
-
