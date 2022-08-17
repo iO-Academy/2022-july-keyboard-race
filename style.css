@@ -18,7 +18,8 @@ footer {
     text-align: center;
 }
 
-.landingTopContainer {
+.landingTopContainer,  
+.leaderboardTopContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,24 +35,31 @@ footer {
 
 }
 
-.landingTitleContainer {
+.landingTitleContainer, 
+.leaderboardTitleContainer {
     text-align: center;
     margin: 0 auto;
 }
 
-.landingTitle {
+.landingTitle,
+.leaderboardTitle,
+.leaderboardSubTitle {
     text-transform: uppercase;
     color: #373C99;
     font-weight: 400;
 }
 
 .leaderSurfboardContainer {
+    position: absolute;
+    top: 25px;
+    right: 100px;
     width: 200px;
     display: flex;
     padding: 0 20px 0 100px;
 }
 
-.mainContainer {
+.mainContainer,
+.leaderboardContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,6 +73,31 @@ footer {
     border-radius: 10px;
     background: linear-gradient(#f9855d,#fdd288,#ffffff);
     overflow: hidden;
+}
+
+#mainLeaderboardContainer {
+    margin: 10px;
+    width: 500px;
+    height: 600px;
+    position: relative;
+    border-radius: 10px;
+    background: #373C99;
+    overflow: hidden;
+    color: #ffffff
+}
+
+.leaderboardHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#leaderboardContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .sun {
