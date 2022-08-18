@@ -16,7 +16,7 @@ footer {
     left: 0;
     width: 100%;
     background-color: #373C99;
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ footer {
 .linkToGithubContainer {
     display: flex;
     justify-content: right;
-    /*margin-top: 10px;*/
+    margin-top: 10px;
     margin-right: 10px;
 }
 
