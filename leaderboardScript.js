@@ -9,9 +9,9 @@ function sortScoresAscending(scoreArray) {
 window.addEventListener('load', () => {
     const leaderboardArray = JSON.parse(localStorage.getItem('leaderboard'))
     const sortedLeaderboardArray = sortScoresAscending(leaderboardArray)
-    sortedLeaderboardArray.forEach((player) => {
-        const playerName = player.name
-        const playerScore = parseFloat(player.score).toFixed(2)
+    for(let i=0;i < 11; i++){
+        const playerName = sortedLeaderboardArray[i].name
+        const playerScore = parseFloat(sortedLeaderboardArray[i].score).toFixed(2)
         leaderboardContainer.innerHTML += `<div class="leaderboardContent"><p class="playerName">${playerName}</p><p>${playerScore}s</p></div>`
-    })
+    }
 })

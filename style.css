@@ -107,7 +107,7 @@ footer {
 
 #mainLeaderboardContainer {
     width: 500px;
-    height: 600px;
+    min-height: 600px;
     position: relative;
     border-radius: 10px;
     background: #373C99;
@@ -191,7 +191,7 @@ footer {
     z-index: 2;
 }
 
-#leaderSurfboard,
+#leaderSurfboardButton,
 #backButton {
     border-radius: 10px;
     background-color: #373C99;
