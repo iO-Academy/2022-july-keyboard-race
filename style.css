@@ -200,6 +200,7 @@ footer {
     z-index: 2
 }
 
+
 a {
     text-decoration: none;
 }
@@ -217,7 +218,7 @@ a :hover {
     padding: 10px;
 }
 
-#leaderSurfboard {
+#leaderSurfboard,#backbutton {
     color: #F0EFF5;
     margin-right: 50px;
     height: 70px;
@@ -417,4 +418,3 @@ footer {
     }
 
 }
-
