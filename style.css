@@ -78,9 +78,10 @@ footer {
 .backButtonContainer  {
     position: absolute;
     top: 5px;
-    right: 100px;
-    display: flex;
-    padding: 0 20px 0 100px;
+    right: 10px;
+    white-space: wrap;
+    color: #000000;
+    
 }
 
 .mainContainer,
@@ -196,7 +197,6 @@ footer {
     background-color: #373C99;
     color: #F0EFF5;
     width: 150px;
-    margin-right: 50px;
     padding: 10px;
 }
 
@@ -305,20 +305,7 @@ footer {
     padding: 10px;
     margin: 10px;
 }
-
-  ::-webkit-scrollbar {
-    width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #4859CD;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #EB6B78;
-    border-radius: 10px;
-  }
-
+ 
   /* Keyframes below here ! */
 
 @keyframes wave {
