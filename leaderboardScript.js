@@ -12,8 +12,7 @@ window.addEventListener('load', () => {
     const sortedLeaderboardArray = sortScoresAscending(leaderboardArray)
     sortedLeaderboardArray.forEach((player) => {
         const playerName = player.name
-        let playerScore = player.score
-        playerScore = parseFloat(playerScore).toFixed(2)
+        const playerScore = parseFloat(player.score).toFixed(2)
         leaderboardContainer.innerHTML += `<div class="leaderboardContent"><p class="playerName">${playerName}</p><p>${playerScore}s</p></div>`
     })
 })
