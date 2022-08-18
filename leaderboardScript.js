@@ -1,5 +1,4 @@
 const leaderboardContainer = document.getElementById('mainLeaderboardContainer')
-const mainPageButton = document.getElementById('backButton')
 
 function sortScoresAscending(scoreArray) {
     return [...scoreArray].sort((a, b) => {
@@ -15,8 +14,4 @@ window.addEventListener('load', () => {
         const playerScore = parseFloat(player.score).toFixed(2)
         leaderboardContainer.innerHTML += `<div class="leaderboardContent"><p class="playerName">${playerName}</p><p>${playerScore}s</p></div>`
     })
-})
-
-mainPageButton.addEventListener('click', () => {
-    location.replace('index.html')
 })
