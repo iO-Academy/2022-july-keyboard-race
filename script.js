@@ -47,7 +47,7 @@ function saveResult(playerName, playerScore) {
             leaderboardArray.push(playerSaveObject)
             localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
         }
-        location.href = 'leaderboardPage.html'
+        location.replace('leaderboardPage.html')
     } else {
         alert('Please enter a 3 character name else your score won\'t be saved')
     }
