@@ -62,7 +62,7 @@ footer {
     font-size: 1.5rem;
     position: absolute;
     top: 40px;
-    left: 140px;
+    left: 115px;
     color: #373C99;
 }
 
@@ -70,7 +70,7 @@ footer {
     font-size: 1.5rem;
     position: absolute;
     top: 75px;
-    left: 150px;
+    left: 125px;
     color: #373C99;
 }
 
@@ -92,6 +92,7 @@ footer {
 
 .leaderboardContainer {
     position: relative;
+    margin-top: 150px;
 }
 
 .leaderboardContent {
@@ -191,7 +192,11 @@ footer {
 
 .leaderboardSurfboardContainer {
     margin-top: 0px;
-    position: relative;
+    position: absolute;
+    top: 120px;
+    left: 370px;
+    transform: rotate(-40deg);
+    z-index: 2
 }
 
 #leaderSurfboard {
@@ -205,14 +210,14 @@ footer {
 
 .leaderboardSurfboardImage {
     height: 180px;
-    width: 450px;
+    width: 400px;
 }
 
 .surfingPenguinThumbsUp {
     position: absolute;
     height: 350px;
     width: 350px;
-    top: 300px;
+    top: 330px;
     left: 1150px;
 }
 
