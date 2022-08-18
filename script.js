@@ -27,19 +27,19 @@ function checkEnd(penguinPosition) {
     return penguinPosition > 1000
 }
 
-function sortScoresAscending(scoreArray) {
-    return [...scoreArray].sort((a, b) => {
-        return a.score - b.score
-    })
-}
-
 function saveResult(playerName, playerScore) {
     if (validateName(playerName)) {
         let playerSaveObject = {name: playerName, score: playerScore}
-        localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
-        alert('Score Saved!')
+        let leaderboardArray = JSON.parse(localStorage.getItem('leaderboard'))
+        if (leaderboardArray === null) {
+            leaderboardArray = new Array(playerSaveObject)
+        } else {
+            leaderboardArray.push(playerSaveObject)
+        }
+        localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
+        location.replace('leaderboardPage.html')
     } else {
-        alert('Please enter a 3 charater name else your score won\'t be saved')
+        alert('Please enter a 3 character name else your score won\'t be saved')
     }
 }
 
@@ -79,4 +79,7 @@ saveButton.addEventListener('click', () => {
 playButton.addEventListener('click', () => {
     history.go(0)
 })
+
+
+
 

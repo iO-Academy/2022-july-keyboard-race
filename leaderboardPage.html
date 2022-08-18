@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
+    <script src="./leaderboardScript.js" defer></script>
     <title>Surfwave Fury Leaderboard</title>
 </head>
 <body>
@@ -18,27 +19,31 @@
         <div class="leaderboardTitleContainer">
             <h1 class="leaderboardTitle">Surfwave Fury</h1>
         </div>
-        <div class="leaderboardSurfboardContainer">
-            <img class="leaderboardSurfboardImage" src="./imgs/surfboardLeaderboard.png" alt="surfboard"/>
-            <h2 class="leaderboardSubTitleOne">Leader</h2>
-            <h2 class="leaderboardSubTitleTwo">Board</h2>
-        </div>
         <div class="backButtonContainer">
-            <a href="index.html"<button id="backbutton">Back to Surfwave Fury</button></a>
+            <a href="index.html" id="backButton">Back to Surfwave Fury</a>
         </div>
-    </div>
-    <div class="leaderboardContainer">
-        <img class="surfingPenguinThumbsUp" src="./imgs/surfingPenguinThumbsUp.png" alt="penguin giving a thumbs up"/>
-        <div id="mainLeaderboardContainer">
-            <div class="leaderboardHeader">
-                <p>Name: </p>
-                <p>Time: </p>
+        </div>
+        <div class="leaderboardContainer">
+            <div id="mainLeaderboardContainer">
+                <div class="leaderboardSurfboardContainer">
+                    <img class="leaderboardSurfboardImage" src="./imgs/surfboardLeaderboard.png" alt="surfboard"/>
+                    <div class="leaderboardSurfboardTextContainer">
+                        <h2>
+                            <span class="leaderboardSubTitleOne">Leader</span>
+                            <span class="leaderboardSubTitleTwo">Board</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="leaderboardHeader">
+                    <p>Name: </p>
+                    <p>Time: </p>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <p>Created By The Surfing Penguins - 2022!</p>
-    </footer>
-</main>
+        <footer>
+            <p>Created By The Surfing Penguins - 2022!</p>
+            <img class="surfingPenguinThumbsUp" src="./imgs/surfingPenguinThumbsUp.png" alt="penguin giving a thumbs up"/>
+        </footer>
+    </main>
 </body>
 </html>

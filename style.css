@@ -20,11 +20,19 @@ footer {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    text-decoration: none;
+}
+
 .landingTopContainer,
 .leaderboardTopContainer {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     margin: 0 10px 0 10px;
 }
 
@@ -41,16 +49,14 @@ footer {
 
 }
 
-.landingTitleContainer,
-.leaderboardTitleContainer {
+.landingTitleContainer {
     text-align: center;
     margin: 0 auto;
 }
 
 .leaderboardTitleContainer {
-    position: absolute;
-    top: 70px;
-    left: 710px;
+    margin-top: 10px;
+    margin-left: 80px;
 }
 
 .landingTitle,
@@ -61,29 +67,29 @@ footer {
     font-weight: 400;
 }
 
-.leaderboardSubTitleOne {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 40px;
-    left: 115px;
-    color: #373C99;
-}
-
+.leaderboardSubTitleOne,
 .leaderboardSubTitleTwo {
     font-size: 1.5rem;
-    position: absolute;
-    top: 75px;
-    left: 125px;
+    text-align: center;
     color: #373C99;
 }
 
-.leaderSurfboardContainer {
+.leaderboardSurfboardTextContainer {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 42px;
+    left: 90px;
+}
+
+.leaderSurfboardContainer,
+.backButtonContainer  {
     position: absolute;
     top: 10px;
     right: 100px;
     width: 200px;
     display: flex;
     padding: 0 20px 0 100px;
+    color: #000000;
 }
 
 .mainContainer,
@@ -95,11 +101,6 @@ footer {
 
 .leaderboardContainer {
     position: relative;
-    margin-top: 150px;
-}
-
-.leaderboardContent {
-    margin-top: 3px;
 }
 
 #mainGameContainer {
@@ -113,13 +114,11 @@ footer {
 }
 
 #mainLeaderboardContainer {
-    margin: 10px;
     width: 500px;
-    height: 700px;
+    min-height: 600px;
     position: relative;
     border-radius: 10px;
     background: #373C99;
-    overflow: auto;
     color: #ffffff;
 }
 
@@ -130,7 +129,7 @@ footer {
     justify-content: space-around;
 }
 
-#leaderboardContent {
+.leaderboardContent {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -218,27 +217,18 @@ footer {
 .leaderboardSurfboardContainer {
     margin-top: 0;
     position: absolute;
-    top: 60px;
-    left: 370px;
+    top: -70px;
+    left: -220px;
     transform: rotate(-40deg);
-    z-index: 2
+    z-index: 2;
 }
 
-
-a {
-    text-decoration: none;
-}
-
-a :hover {
-    text-decoration: none;
-}
-
-#leaderSurfboard {
+#leaderSurfboardButton,
+#backButton {
     border-radius: 10px;
     background-color: #373C99;
     color: #F0EFF5;
     width: 150px;
-    margin-right: 50px;
     padding: 10px;
 }
 
@@ -276,15 +266,15 @@ a :hover {
 
 .leaderboardSurfboardImage {
     height: 180px;
-    width: 400px;
+    width: 350px;
 }
 
 .surfingPenguinThumbsUp {
     position: absolute;
-    height: 350px;
-    width: 350px;
-    top: 395px;
-    left: 1150px;
+    height: 250px;
+    width: 250px;
+    bottom: 45px;
+    right: 270px
 }
 
 #startGameButton {
@@ -336,16 +326,6 @@ a :hover {
     z-index: 3;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #373C99;
-    color: white;
-    text-align: center;
-}
-
 #displayEndGameContainer {
     position: absolute;
     display: none;
@@ -392,6 +372,14 @@ footer {
     width: 200px;
     height: 60px;
     cursor: pointer;
+}
+
+.playerName {
+    text-transform: uppercase;
+}
+
+#saveButton, #playButton {
+    border-radius: 10px;
     background-color: #373C99;
     border: 1px solid #F0EFF5;
     border-radius: 15px;
@@ -418,22 +406,6 @@ footer {
     margin: 5px;
 }
 
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    background: #4859CD;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #EB6B78;
-    border-radius: 10px;
-}
-
-/* Keyframes below here ! */
-
 @keyframes wave {
     0% {
         transform: translateX(0);
@@ -456,24 +428,20 @@ footer {
     100% {
         background-position: 0 200px, 0 300px, 100px 250px;
     }
-
 }
 
 @keyframes bob {
     0% {
         top: 415px;
     }
-
     40% {
         top: 418px;
         transform: rotate(-3deg);
     }
-
     80% {
         top: 412px;
         transform: rotate(3deg);
     }
-
     100% {
         top: 415px;
     }
