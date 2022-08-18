@@ -92,10 +92,6 @@ footer {
     position: relative;
 }
 
-.leaderboardContent {
-    margin-top: 3px;
-}
-
 #mainGameContainer {
     margin: 10px;
     width: 1000px;
@@ -124,7 +120,7 @@ footer {
     justify-content: space-around;
 }
 
-#leaderboardContent {
+.leaderboardContent {
     display: flex;
     flex-direction: row;
     width: 100%;
