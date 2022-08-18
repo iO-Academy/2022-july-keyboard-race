@@ -7,7 +7,6 @@ const saveButton = document.getElementById('saveButton')
 const playButton = document.getElementById('playButton')
 const form = document.getElementById('formContainer')
 
-
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
 let lastKeyPressed = ""
