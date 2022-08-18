@@ -170,6 +170,7 @@ footer {
     background-image: url(./imgs/surfingPenguin.png);
     background-size: cover;
     transition: left linear 0.15s;
+    animation: bob 0.9s linear infinite;
 }
 
 .instructionsOverlayTitle {
@@ -347,5 +348,25 @@ footer {
         background-position: 0 200px, 0 300px, 100px 250px;
     }
 
+}
+
+@keyframes bob {
+    0% {
+        top: 415px;
+    }
+
+    40% {
+        top: 418px;
+        transform: rotate(-3deg);
+    }
+
+    80% {
+        top: 412px;
+        transform: rotate(3deg);
+    }
+
+    100% {
+        top: 415px;
+    }
 }
 
