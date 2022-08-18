@@ -4,6 +4,10 @@ const avatar = document.getElementById('avatar')
 const gameTimerDisplay = document.querySelector('#stopwatchSecondsDisplay')
 const endSplashScreen = document.querySelector('#displayEndGameContainer')
 const nameField = document.getElementById('nameField')
+const saveButton = document.getElementById('saveButton')
+const playButton = document.getElementById('playButton')
+const form = document.getElementById('formContainer')
+
 
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
@@ -25,18 +29,13 @@ function checkEnd(penguinPosition) {
     return penguinPosition > 1000
 }
 
-function endGameMessage() {
-    alert('Far out brah! That was totally radical, you found some sweet lines down those faces! Catch you on the flip')
-}
-
 function saveResult(playerName, playerScore) {
     let playerSaveObject = {name: playerName, score: playerScore}
     localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
     alert('Score Saved!')
 }
 
-function getName(nameInput) {
-    let playerName = nameInput.Name.value
+function getName(playerName) {
     if (playerName.length === 3) {
         saveResult(playerName, timer)
     }
@@ -61,12 +60,20 @@ startButton.addEventListener('click', () => {
                 if (checkEnd(penguinPosition)) {
                     clearInterval(raceStopwatch)
                     window.document.removeEventListener("keydown", playGame)
-                        if (checkEnd(penguinPosition)) {
-                           endSplashScreen.style.display = 'flex';
-                  }
+                    if (checkEnd(penguinPosition)) {
+                       endSplashScreen.style.display = 'flex';
+                    }
                 }
             }
         }
     })
+})
+
+saveButton.addEventListener('click', () => {
+    getName(form.name.value)
+})
+
+playButton.addEventListener('click', () => {
+    history.go(0)
 })
 

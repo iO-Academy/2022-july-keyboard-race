@@ -211,7 +211,7 @@ width: 400%;
     margin-top:10px;
 }
 
-.saveButton, .playButton {
+#saveButton, #playButton {
     border-radius: 10px;
     background-color: #373C99;
     color: #F0EFF5;
