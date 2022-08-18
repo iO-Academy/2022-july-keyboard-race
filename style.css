@@ -58,27 +58,24 @@ footer {
     font-weight: 400;
 }
 
-.leaderboardSubTitleOne {
+.leaderboardSubTitleOne,
+.leaderboardSubTitleTwo {
     font-size: 1.5rem;
-    position: absolute;
-    top: 40px;
-    left: 115px;
+    text-align: center;
     color: #373C99;
 }
 
-.leaderboardSubTitleTwo {
-    font-size: 1.5rem;
+.leaderboardSurfboardTextContainer {
     position: absolute;
-    top: 75px;
-    left: 125px;
-    color: #373C99;
+    bottom: 30px;
+    left: 90px;
 }
+
 
 .leaderSurfboardContainer {
     position: absolute;
     top: 25px;
     right: 100px;
-    width: 200px;
     display: flex;
     padding: 0 20px 0 100px;
 }
@@ -192,7 +189,7 @@ footer {
 .leaderboardSurfboardContainer {
     margin-top: 0px;
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 370px;
     transform: rotate(-40deg);
     z-index: 2
