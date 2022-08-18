@@ -68,7 +68,8 @@ footer {
 
 .leaderboardSurfboardTextContainer {
     position: absolute;
-    bottom: 30px;
+    text-transform: uppercase;
+    bottom: 42px;
     left: 90px;
 }
 
