@@ -3,7 +3,6 @@ const splashScreen = document.querySelector('#displaySplashInstructionsContainer
 const avatar = document.getElementById('avatar')
 const gameTimerDisplay = document.querySelector('#stopwatchSecondsDisplay')
 const endSplashScreen = document.querySelector('#displayEndGameContainer')
-const nameField = document.getElementById('nameField')
 const saveButton = document.getElementById('saveButton')
 const playButton = document.getElementById('playButton')
 const form = document.getElementById('formContainer')
