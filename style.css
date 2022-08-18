@@ -90,7 +90,6 @@ footer {
 
 .leaderboardContainer {
     position: relative;
-    margin-top: 150px;
 }
 
 .leaderboardContent {
@@ -110,7 +109,7 @@ footer {
 #mainLeaderboardContainer {
     margin: 10px;
     width: 500px;
-    height: 700px;
+    height: 550px;
     position: relative;
     border-radius: 10px;
     background: #373C99;
