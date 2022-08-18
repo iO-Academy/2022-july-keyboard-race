@@ -48,6 +48,7 @@ function saveResult(playerName, playerScore) {
             localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
         }
         alert('Score Saved!')
+        
     } else {
         alert('Please enter a 3 character name else your score won\'t be saved')
     }
