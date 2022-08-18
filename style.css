@@ -40,14 +40,15 @@ footer {
 
 }
 
-.landingTitleContainer, 
-.leaderboardTitleContainer {
+.landingTitleContainer {
     text-align: center;
     margin: 0 auto;
 }
 
 .leaderboardTitleContainer {
-    margin-top: 200px
+    margin-top: 120px;
+    margin-left: 50px;
+
 }
 
 .landingTitle,
