@@ -23,7 +23,7 @@ footer {
 .leaderboardTopContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin: 0 10px 0 10px;
 }
 
@@ -218,7 +218,7 @@ a :hover {
     padding: 10px;
 }
 
-#leaderSurfboard,#backbutton {
+#leaderSurfboard {
     color: #F0EFF5;
     margin-right: 50px;
     height: 70px;
@@ -233,6 +233,22 @@ a :hover {
     text-align: center;
 }
 
+#backbutton {
+    display: flex;
+    color: #F0EFF5;
+    margin: 10px 50px;
+    height: 70px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #373C99;
+    border: 1px solid #F0EFF5;
+    border-radius: 15px;
+    box-shadow: #F0EFF5 5px 5px 0 0;
+    padding: 5px 18px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+}
 .leaderboardSurfboardImage {
     height: 180px;
     width: 400px;
@@ -245,7 +261,6 @@ a :hover {
     top: 395px;
     left: 1150px;
 }
-
 
 #startGameButton {
     color: #F0EFF5;
