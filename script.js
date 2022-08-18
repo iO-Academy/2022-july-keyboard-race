@@ -28,12 +28,6 @@ function checkEnd(penguinPosition) {
     return penguinPosition > 1000
 }
 
-function sortScoresAscending(scoreArray) {
-    return [...scoreArray].sort((a, b) => {
-        return a.score - b.score
-    })
-}
-
 function saveResult(playerName, playerScore) {
     if (validateName(playerName)) {
         let playerSaveObject = {name: playerName, score: playerScore}
