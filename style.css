@@ -218,8 +218,8 @@ footer {
     position: absolute;
     height: 350px;
     width: 350px;
-    top: 395px;
-    left: 1150px;
+    bottom: 44px;
+    right: 150px
 }
 
 #startGameButton {
