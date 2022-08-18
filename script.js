@@ -29,18 +29,17 @@ function checkEnd(penguinPosition) {
 }
 
 function saveResult(playerName, playerScore) {
-    let playerSaveObject = {name: playerName, score: playerScore}
-    localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
-    alert('Score Saved!')
+    if (validateName(playerName)) {
+        let playerSaveObject = {name: playerName, score: playerScore}
+        localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
+        alert('Score Saved!')
+    } else {
+        alert('Please enter a 3 charater name else your score won\'t be saved')
+    }
 }
 
-function getName(playerName) {
-    if (playerName.length === 3) {
-        saveResult(playerName, timer)
-    }
-    else {
-        alert('Please use a three character name!')
-    }
+function validateName(playerName) {
+    return playerName.length === 3;
 }
 
 startButton.addEventListener('click', () => {
@@ -69,7 +68,7 @@ startButton.addEventListener('click', () => {
 })
 
 saveButton.addEventListener('click', () => {
-    getName(form.name.value)
+    saveResult(form.name.value, timer)
 })
 
 playButton.addEventListener('click', () => {
