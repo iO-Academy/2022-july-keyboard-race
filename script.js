@@ -6,6 +6,7 @@ const endSplashScreen = document.querySelector('#displayEndGameContainer')
 const saveButton = document.getElementById('saveButton')
 const playButton = document.getElementById('playButton')
 const form = document.getElementById('formContainer')
+const leaderboardButton = document.getElementById('leaderSurfboard')
 
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
@@ -89,4 +90,10 @@ saveButton.addEventListener('click', () => {
 playButton.addEventListener('click', () => {
     history.go(0)
 })
+
+leaderboardButton.addEventListener('click', () => {
+    location.replace('leaderboardPage.html')
+})
+
+
 
