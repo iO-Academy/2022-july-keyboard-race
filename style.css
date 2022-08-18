@@ -78,7 +78,7 @@ footer {
 
 .leaderSurfboardContainer {
     position: absolute;
-    top: 25px;
+    top: 10px;
     right: 100px;
     width: 200px;
     display: flex;
@@ -330,11 +330,19 @@ footer {
 }
 
 #nameField {
-    width: 110px;
+    width: 150px;
     text-transform: uppercase;
-    border-radius: 10px;
     height: 60px;
-    margin-top: 10px;
+    margin: 10px 5px;
+    color: #373C99;
+    background-color: #F0EFF5;
+    border: 1px solid #373C99;
+    border-radius: 15px;
+    padding: 0 18px;
+    box-shadow: #373C99 5px 5px 0 0;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
 }
 
 #saveButton {
