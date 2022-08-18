@@ -276,7 +276,7 @@ footer {
     100% {transform: translateX(-50%);}
 }
 
-@keyframes wind{
+@keyframes wind {
     0% {
         background-position: 0 200px, 0 300px, 100px 250px;
     }
