@@ -73,9 +73,10 @@ footer {
 }
 
 
-.leaderSurfboardContainer {
+.leaderSurfboardContainer,
+.backButtonContainer  {
     position: absolute;
-    top: 25px;
+    top: 5px;
     right: 100px;
     display: flex;
     padding: 0 20px 0 100px;
@@ -188,7 +189,8 @@ footer {
     z-index: 2;
 }
 
-#leaderSurfboard {
+#leaderSurfboard,
+#backButton {
     border-radius: 10px;
     background-color: #373C99;
     color: #F0EFF5;
@@ -204,8 +206,8 @@ footer {
 
 .surfingPenguinThumbsUp {
     position: absolute;
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
     bottom: 45px;
     right: 270px
 }
