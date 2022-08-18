@@ -293,6 +293,10 @@ footer {
     margin-top:10px;
 }
 
+.playerName {
+    text-transform: uppercase;
+}
+
 #saveButton, #playButton {
     border-radius: 10px;
     background-color: #373C99;

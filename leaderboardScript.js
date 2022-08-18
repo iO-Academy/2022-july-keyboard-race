@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
         const playerName = player.name
         let playerScore = player.score
         playerScore = parseFloat(playerScore).toFixed(2)
-        leaderboardContainer.innerHTML += `<div class="leaderboardContent"><p>${playerName}</p><p>${playerScore}s</p></div>`
+        leaderboardContainer.innerHTML += `<div class="leaderboardContent"><p class="playerName">${playerName}</p><p>${playerScore}s</p></div>`
     })
 })
 
