@@ -103,7 +103,6 @@ footer {
 }
 
 #mainLeaderboardContainer {
-    margin: 10px;
     width: 500px;
     height: 700px;
     position: relative;
@@ -182,10 +181,9 @@ footer {
 }
 
 .leaderboardSurfboardContainer {
-    margin-top: 0px;
     position: absolute;
-    top: -100px;
-    left: -200px;
+    top: -70px;
+    left: -220px;
     transform: rotate(-40deg);
     z-index: 2;
 }
