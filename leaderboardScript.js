@@ -15,7 +15,8 @@ window.addEventListener('load', () => {
     sortedLeaderboardArray.forEach((player) => {
         //get player name and score
         const playerName = player.name
-        const playerScore = player.score
+        let playerScore = player.score
+        playerScore = parseFloat(playerScore).toFixed(2)
         //print name and score for each player
         leaderboardContainer.innerHTML += `<div class="leaderboardContent"><p>${playerName}</p><p>${playerScore}s</p></div>`
     })
