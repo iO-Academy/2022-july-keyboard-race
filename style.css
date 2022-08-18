@@ -104,8 +104,9 @@ footer {
     height: 600px;
     position: relative;
     border-radius: 10px;
-    background: linear-gradient(#f9855d,#fdd288,#ffffff);
+    background: linear-gradient(#fe9d8d,#fdd288,#ffffff);
     overflow: hidden;
+    border: 5px solid #373C99;
 }
 
 #mainLeaderboardContainer {
