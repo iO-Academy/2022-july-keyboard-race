@@ -47,9 +47,7 @@ footer {
 }
 
 .leaderboardTitleContainer {
-    position: absolute;
-    top: 70px;
-    left: 710px;
+    margin-top: 200px
 }
 
 .landingTitle,
@@ -211,7 +209,7 @@ footer {
 
 .leaderboardSurfboardImage {
     height: 180px;
-    width: 400px;
+    width: 350px;
 }
 
 .surfingPenguinThumbsUp {
