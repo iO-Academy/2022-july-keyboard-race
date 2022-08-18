@@ -271,16 +271,6 @@ footer {
       z-index: 3;
   }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #373C99;
-    color: white;
-    text-align: center;
-}
-
 #displayEndGameContainer {
     position: absolute;
     display: none;
