@@ -46,7 +46,7 @@ footer {
 }
 
 .leaderboardTitleContainer {
-    margin-top: 120px;
+    margin-top: 10px;
     margin-left: 80px;
 
 }
@@ -105,11 +105,10 @@ footer {
 #mainLeaderboardContainer {
     margin: 10px;
     width: 500px;
-    height: 550px;
+    height: 700px;
     position: relative;
     border-radius: 10px;
     background: #373C99;
-    overflow: auto;
     color: #ffffff;
 }
 
@@ -185,10 +184,10 @@ footer {
 .leaderboardSurfboardContainer {
     margin-top: 0px;
     position: absolute;
-    top: 30px;
-    left: 370px;
+    top: -100px;
+    left: -200px;
     transform: rotate(-40deg);
-    z-index: 2
+    z-index: 2;
 }
 
 #leaderSurfboard {
