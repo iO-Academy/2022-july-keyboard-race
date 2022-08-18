@@ -6,6 +6,7 @@ const endSplashScreen = document.querySelector('#displayEndGameContainer')
 const saveButton = document.getElementById('saveButton')
 const playButton = document.getElementById('playButton')
 const form = document.getElementById('formContainer')
+const leaderboardButton = document.getElementById('leaderSurfboard')
 
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
@@ -27,26 +28,16 @@ function checkEnd(penguinPosition) {
     return penguinPosition > 1000
 }
 
-function sortScoresAscending(scoreArray) {
-    return [...scoreArray].sort((a, b) => {
-        return a.score - b.score
-    })
-}
-
 function saveResult(playerName, playerScore) {
     if (validateName(playerName)) {
         let playerSaveObject = {name: playerName, score: playerScore}
         let leaderboardArray = JSON.parse(localStorage.getItem('leaderboard'))
-        // if previousScoreArray empty create the array and add playerSaveObject
-        // else push playerSaveObject to the end of array
         if (leaderboardArray === null) {
             leaderboardArray = new Array(playerSaveObject)
-            localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
-            console.log(leaderboardArray)
         } else {
             leaderboardArray.push(playerSaveObject)
-            localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
         }
+        localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
         location.replace('leaderboardPage.html')
     } else {
         alert('Please enter a 3 character name else your score won\'t be saved')
@@ -89,4 +80,10 @@ saveButton.addEventListener('click', () => {
 playButton.addEventListener('click', () => {
     history.go(0)
 })
+
+leaderboardButton.addEventListener('click', () => {
+    location.replace('leaderboardPage.html')
+})
+
+
 
