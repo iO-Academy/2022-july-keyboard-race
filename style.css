@@ -236,9 +236,8 @@ a :hover {
     padding: 10px;
 }
 
-#leaderSurfboard {
+#leaderSurfboardButton {
     color: #F0EFF5;
-    margin-right: 50px;
     height: 70px;
     cursor: pointer;
     background-color: #373C99;
@@ -251,12 +250,10 @@ a :hover {
     text-align: center;
 }
 
-#backbutton {
+#backButton {
     display: flex;
     color: #F0EFF5;
-    margin: 10px 50px;
     height: 70px;
-    width: 150px;
     cursor: pointer;
     background-color: #373C99;
     border: 1px solid #F0EFF5;
