@@ -46,8 +46,10 @@ footer {
     margin: 0 auto;
 }
 
-.leaderboardTitle {
-    margin-bottom: 5px;
+.leaderboardTitleContainer {
+    position: absolute;
+    top: 70px;
+    left: 710px;
 }
 
 .landingTitle,
@@ -105,15 +107,14 @@ footer {
     height: 600px;
     position: relative;
     border-radius: 10px;
-    background: linear-gradient(#fe9d8d,#fdd288,#ffffff);
+    background: linear-gradient(#f9855d,#fdd288,#ffffff);
     overflow: hidden;
-    border: 5px solid #373C99;
 }
 
 #mainLeaderboardContainer {
     margin: 10px;
     width: 500px;
-    height: 600px;
+    height: 700px;
     position: relative;
     border-radius: 10px;
     background: #373C99;
@@ -193,7 +194,7 @@ footer {
 .leaderboardSurfboardContainer {
     margin-top: 0px;
     position: absolute;
-    top: 120px;
+    top: 60px;
     left: 370px;
     transform: rotate(-40deg);
     z-index: 2
@@ -217,7 +218,7 @@ footer {
     position: absolute;
     height: 350px;
     width: 350px;
-    top: 330px;
+    top: 395px;
     left: 1150px;
 }
 
