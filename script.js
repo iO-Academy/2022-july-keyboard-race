@@ -2,12 +2,15 @@ const startButton = document.querySelector('#startGameButton')
 const splashScreen = document.querySelector('#displaySplashInstructionsContainer')
 const avatar = document.getElementById('avatar')
 const gameTimerDisplay = document.querySelector('#stopwatchSecondsDisplay')
+const endSplashScreen = document.querySelector('#displayEndGameContainer')
+const saveButton = document.getElementById('saveButton')
+const playButton = document.getElementById('playButton')
+const form = document.getElementById('formContainer')
 
 avatar.style.left = '0px'
 let penguinPosition = parseInt(avatar.style.left)
 let lastKeyPressed = ""
 let timer = 0
-let timerDisplay = 0
 let raceStopwatch
 
 function checkKeyIsDifferent(lastKeyPressed, currentKeyPressed) {
@@ -30,8 +33,18 @@ function sortScoresAscending(scoreArray) {
     })
 }
 
-function endGameMessage() {
-    alert('Far out brah! That was totally radical, you found some sweet lines down those faces! Catch you on the flip')
+function saveResult(playerName, playerScore) {
+    if (validateName(playerName)) {
+        let playerSaveObject = {name: playerName, score: playerScore}
+        localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
+        alert('Score Saved!')
+    } else {
+        alert('Please enter a 3 charater name else your score won\'t be saved')
+    }
+}
+
+function validateName(playerName) {
+    return playerName.length === 3;
 }
 
 startButton.addEventListener('click', () => {
@@ -48,11 +61,22 @@ startButton.addEventListener('click', () => {
                 lastKeyPressed = e.code
                 penguinPosition = movePenguin(penguinPosition)
                 if (checkEnd(penguinPosition)) {
-                    endGameMessage()
                     clearInterval(raceStopwatch)
                     window.document.removeEventListener("keydown", playGame)
+                    if (checkEnd(penguinPosition)) {
+                       endSplashScreen.style.display = 'flex';
+                    }
                 }
             }
         }
     })
 })
+
+saveButton.addEventListener('click', () => {
+    saveResult(form.name.value, timer)
+})
+
+playButton.addEventListener('click', () => {
+    history.go(0)
+})
+
