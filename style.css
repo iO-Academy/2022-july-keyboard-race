@@ -20,11 +20,11 @@ footer {
     text-align: center;
 }
 
-.landingTopContainer,  
+.landingTopContainer,
 .leaderboardTopContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin: 0 10px 0 10px;
 }
 
@@ -41,7 +41,7 @@ footer {
 
 }
 
-.landingTitleContainer, 
+.landingTitleContainer,
 .leaderboardTitleContainer {
     text-align: center;
     margin: 0 auto;
@@ -79,7 +79,7 @@ footer {
 
 .leaderSurfboardContainer {
     position: absolute;
-    top: 25px;
+    top: 10px;
     right: 100px;
     width: 200px;
     display: flex;
@@ -108,7 +108,7 @@ footer {
     height: 600px;
     position: relative;
     border-radius: 10px;
-    background: linear-gradient(#f9855d,#fdd288,#ffffff);
+    background: linear-gradient(#f9855d, #fdd288, #ffffff);
     overflow: hidden;
 }
 
@@ -186,7 +186,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 600px;
-    width: 1000px; 
+    width: 1000px;
     padding: 40px;
     background-color: #FE9D8D;
     border: 5px #373C99 solid;
@@ -195,12 +195,21 @@ footer {
 }
 
 .leaderboardSurfboardContainer {
-    margin-top: 0px;
+    margin-top: 0;
     position: absolute;
     top: 60px;
     left: 370px;
     transform: rotate(-40deg);
     z-index: 2
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    text-decoration: none;
 }
 
 #leaderSurfboard {
@@ -210,6 +219,38 @@ footer {
     width: 150px;
     margin-right: 50px;
     padding: 10px;
+}
+
+#leaderSurfboard {
+    color: #F0EFF5;
+    margin-right: 50px;
+    height: 70px;
+    cursor: pointer;
+    background-color: #373C99;
+    border: 1px solid #F0EFF5;
+    border-radius: 15px;
+    box-shadow: #F0EFF5 5px 5px 0 0;
+    padding: 5px 18px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#backbutton {
+    display: flex;
+    color: #F0EFF5;
+    margin: 10px 50px;
+    height: 70px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #373C99;
+    border: 1px solid #F0EFF5;
+    border-radius: 15px;
+    box-shadow: #F0EFF5 5px 5px 0 0;
+    padding: 5px 18px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .leaderboardSurfboardImage {
@@ -226,13 +267,20 @@ footer {
 }
 
 #startGameButton {
-    border-radius: 10px;
-    background-color: #373C99;
     color: #F0EFF5;
     font-size: 1.5rem;
-    width: 150px;
+    width: 170px;
     height: 60px;
+    cursor: pointer;
+    background-color: #373C99;
+    border: 1px solid #F0EFF5;
+    border-radius: 15px;
+    box-shadow: #F0EFF5 5px 5px 0 0;
+    padding: 0 18px;
+    line-height: 50px;
+    text-decoration: none;
 }
+
 
 .wave {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23003F7C'/%3E%3C/svg%3E");
@@ -242,45 +290,46 @@ footer {
     animation: wave 20s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.6;
-  }
+}
 
-  .wave:nth-of-type(2) {
+.wave:nth-of-type(2) {
     bottom: 0;
     animation: wave 36s linear reverse infinite;
     opacity: 0.7;
-  }
+}
 
-  .wave:nth-of-type(3) {
+.wave:nth-of-type(3) {
     bottom: 0;
     animation: wave 40s -1s linear infinite;
     opacity: 0.5;
-  }
+}
 
 .cloud-background {
     position: relative;
     height: 600px;
     background: url(./imgs/clouds1000.png);
     background: url(./imgs/clouds10002.png) 0 200px,
-                url(./imgs/clouds12001.png) 0 300px,
-                url(./imgs/clouds1000_blur3.png) 100px 250px;
-      animation: wind 120s linear infinite;
-      z-index: 3;
-  }
-  footer {
+    url(./imgs/clouds12001.png) 0 300px,
+    url(./imgs/clouds1000_blur3.png) 100px 250px;
+    animation: wind 120s linear infinite;
+    z-index: 3;
+}
+
+footer {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #373C99;
     color: white;
     text-align: center;
-  }
+}
 
 #displayEndGameContainer {
     position: absolute;
     display: none;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -301,40 +350,79 @@ footer {
 }
 
 #nameField {
-    width: 110px;
+    width: 150px;
     text-transform: uppercase;
-    border-radius: 10px;
     height: 60px;
-    margin-top:10px;
+    margin: 10px 5px;
+    color: #373C99;
+    background-color: #F0EFF5;
+    border: 1px solid #373C99;
+    border-radius: 15px;
+    padding: 0 18px;
+    box-shadow: #373C99 5px 5px 0 0;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
 }
 
-#saveButton, #playButton {
-    border-radius: 10px;
-    background-color: #373C99;
+#saveButton {
     color: #F0EFF5;
-    padding: 10px;
-    margin: 10px;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #373C99;
+    border: 1px solid #F0EFF5;
+    border-radius: 15px;
+    box-shadow: #F0EFF5 5px 5px 0 0;
+    padding: 0 18px;
+    line-height: 50px;
+    text-decoration: none;
+    margin: 5px;
 }
 
-  ::-webkit-scrollbar {
+#playButton {
+    color: #F0EFF5;
+    font-size: 1rem;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #373C99;
+    border: 1px solid #F0EFF5;
+    border-radius: 15px;
+    box-shadow: #F0EFF5 5px 5px 0 0;
+    padding: 0 18px;
+    line-height: 50px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: #4859CD;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #EB6B78;
     border-radius: 10px;
-  }
+}
 
-  /* Keyframes below here ! */
+/* Keyframes below here ! */
 
 @keyframes wave {
-    0% {transform: translateX(0);}
-    50% {transform: translateX(-25%);}
-    100% {transform: translateX(-50%);}
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 @keyframes wind {
@@ -369,4 +457,3 @@ footer {
         top: 415px;
     }
 }
-
