@@ -36,10 +36,20 @@ function sortScoresAscending(scoreArray) {
 function saveResult(playerName, playerScore) {
     if (validateName(playerName)) {
         let playerSaveObject = {name: playerName, score: playerScore}
-        localStorage.setItem('playerKey', JSON.stringify(playerSaveObject))
-        alert('Score Saved!')
+        let leaderboardArray = JSON.parse(localStorage.getItem('leaderboard'))
+        // if previousScoreArray empty create the array and add playerSaveObject
+        // else push playerSaveObject to the end of array
+        if (leaderboardArray === null) {
+            leaderboardArray = new Array(playerSaveObject)
+            localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
+            console.log(leaderboardArray)
+        } else {
+            leaderboardArray.push(playerSaveObject)
+            localStorage.setItem('leaderboard', JSON.stringify(leaderboardArray))
+        }
+        location.replace('leaderboardPage.html')
     } else {
-        alert('Please enter a 3 charater name else your score won\'t be saved')
+        alert('Please enter a 3 character name else your score won\'t be saved')
     }
 }
 
