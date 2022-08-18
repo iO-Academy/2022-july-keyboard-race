@@ -320,10 +320,10 @@ a :hover {
 .cloud-background {
     position: relative;
     height: 600px;
-    background: url(./imgs/clouds1000.png);
-    background: url(./imgs/clouds10002.png) 0 200px,
-    url(./imgs/clouds12001.png) 0 300px,
-    url(./imgs/clouds1000_blur3.png) 100px 250px;
+    background: url('./imgs/clouds1000.png');
+    background: url('./imgs/clouds10002.png') 0 200px,
+    url('./imgs/clouds12001.png') 0 300px,
+    url('./imgs/clouds1000_blur3.png') 100px 250px;
     animation: wind 120s linear infinite;
     z-index: 3;
 }
