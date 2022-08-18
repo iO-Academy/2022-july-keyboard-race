@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     background-color: #FE9D8D;
     font-family: "Press Start 2P", sans-serif;
+    background-color: #fe9d8d;  
 }
 
 footer {
@@ -18,11 +19,16 @@ footer {
     text-align: center;
 }
 
-.landingTopContainer {
+.landingTopContainer,  
+.leaderboardTopContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 10px 0 10px;
+}
+
+.leaderboardTopContainer {
+    flex-direction: column;
 }
 
 .stopwatchContainer {
@@ -39,23 +45,55 @@ footer {
     margin: 0 auto;
 }
 
-.landingTitle {
+.leaderboardTitleContainer {
+    margin-top: 10px;
+    margin-left: 80px;
+
+}
+
+.landingTitle,
+.leaderboardTitle,
+.leaderboardSubTitle {
     text-transform: uppercase;
     color: #373C99;
     font-weight: 400;
 }
 
-.leaderSurfboardContainer {
-    width: 200px;
-    display: flex;
-    padding: 0 20px 0 100px;
+.leaderboardSubTitleOne,
+.leaderboardSubTitleTwo {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #373C99;
 }
 
-.mainContainer {
+.leaderboardSurfboardTextContainer {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 42px;
+    left: 90px;
+}
+
+
+.leaderSurfboardContainer,
+.backButtonContainer  {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    white-space: wrap;
+    color: #000000;
+    
+}
+
+.mainContainer,
+.leaderboardContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
+
+.leaderboardContainer {
+    position: relative;
+}
 
 #mainGameContainer {
     margin: 10px;
@@ -65,6 +103,29 @@ footer {
     border-radius: 10px;
     background: linear-gradient(#f9855d,#fdd288,#ffffff);
     overflow: hidden;
+}
+
+#mainLeaderboardContainer {
+    width: 500px;
+    min-height: 600px;
+    position: relative;
+    border-radius: 10px;
+    background: #373C99;
+    color: #ffffff;
+}
+
+.leaderboardHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.leaderboardContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .sun {
@@ -77,9 +138,10 @@ footer {
     border-radius: 50%;
     z-index: 2;
 }
+
 .ocean {
-height: 150px; /* change the height of the waves here */
-width: 400%;
+    height: 150px; /* change the height of the waves here */
+    width: 400%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -88,7 +150,6 @@ width: 400%;
     border-top: 2px #ffffff solid;
     z-index: 4;
 }
-
 
 #avatar {
     width: 60px;
@@ -105,6 +166,7 @@ width: 400%;
 .instructionsOverlayTitle {
     font-weight: 400;
 }
+
 #displaySplashInstructionsContainer {
     position: absolute;
     display: flex;
@@ -121,13 +183,34 @@ width: 400%;
     z-index: 10;
 }
 
+.leaderboardSurfboardContainer {
+    position: absolute;
+    top: -70px;
+    left: -220px;
+    transform: rotate(-40deg);
+    z-index: 2;
+}
 
-#leaderSurfboard {
+#leaderSurfboardButton,
+#backButton {
     border-radius: 10px;
     background-color: #373C99;
     color: #F0EFF5;
     width: 150px;
-    margin-right: 50px;
+    padding: 10px;
+}
+
+.leaderboardSurfboardImage {
+    height: 180px;
+    width: 350px;
+}
+
+.surfingPenguinThumbsUp {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    bottom: 45px;
+    right: 270px
 }
 
 #startGameButton {
@@ -211,6 +294,10 @@ width: 400%;
     margin-top:10px;
 }
 
+.playerName {
+    text-transform: uppercase;
+}
+
 #saveButton, #playButton {
     border-radius: 10px;
     background-color: #373C99;
@@ -218,6 +305,8 @@ width: 400%;
     padding: 10px;
     margin: 10px;
 }
+ 
+  /* Keyframes below here ! */
 
 @keyframes wave {
     0% {transform: translateX(0);}
@@ -225,7 +314,7 @@ width: 400%;
     100% {transform: translateX(-50%);}
 }
 
-@keyframes wind{
+@keyframes wind {
     0% {
         background-position: 0 200px, 0 300px, 100px 250px;
     }
