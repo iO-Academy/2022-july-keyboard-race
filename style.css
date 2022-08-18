@@ -21,7 +21,15 @@ footer {
 }
 
 .linkToGithub {
-    color: aliceblue;
+    color: #ffffff;
+    font-size: 48px;
+}
+
+.linkToGithubContainer {
+    display: flex;
+    justify-content: right;
+    /*margin-top: 10px;*/
+    margin-right: 10px;
 }
 
 .landingTopContainer,  
