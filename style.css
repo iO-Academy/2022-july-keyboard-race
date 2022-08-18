@@ -186,7 +186,7 @@ a :hover {
     left: 70px;
     top: 390px;
     z-index: 4;
-    background-image: url(./imgs/island.png);
+    background-image: url("./imgs/island.png");
     background-size: cover;
 }
 
@@ -197,7 +197,7 @@ a :hover {
     right: 10px;
     top: 390px;
     z-index: 4;
-    background-image: url(./imgs/endFlag.png);
+    background-image: url("./imgs/endFlag.png");
     background-size: cover;
 }
 
@@ -216,10 +216,9 @@ a :hover {
     height: 600px;
     width: 1000px;
     padding: 40px;
-    background-color: #FE9D8D;
+    background-color: rgba(254, 157, 141, 0.5);
     border: 5px #373C99 solid;
     z-index: 10;
-    opacity: 0.80;
 }
 
 .leaderboardSurfboardContainer {
