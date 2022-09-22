@@ -9,6 +9,10 @@ Your time is recorded in local storage and you are able to input a three letter 
 
 The world record currently stands at an insane 2.50s set my Nico Herbreteau. Have a go and see if you can beat him!
 
+## Live Version
+
+https://dev.io-academy.uk/projects/2022-july/surfwave-fury/
+
 ## Dependencies
 ```
 - Javascript ES6
